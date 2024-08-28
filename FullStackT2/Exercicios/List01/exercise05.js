@@ -25,7 +25,7 @@ if(imc>=40){
 else if(imc>=25 &&  imc<30){
     console.log(" Voce esta com Sobrepeso,seu IMC e: \n"+imc)
 }
-else if(imc>=18.6 &&  imc<25){
+else if(imc>=18.5 &&  imc<25){
     console.log(" Voce esta com o IMC normal : \n"+imc)
 }else{
     console.log(" Seu IMC esta abaixo do normal: \n"+imc)
