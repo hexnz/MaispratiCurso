@@ -5,6 +5,7 @@
 utilizando uma estrutura de controle if. */
 
 const prompt = require("readline-sync");
+console.log("____VERIFICADOR DE PAR OU IMPAR____")
 let numero= Number(prompt.question("Insira um Numero:  \n  "));
 
 if(numero% 2==0){
