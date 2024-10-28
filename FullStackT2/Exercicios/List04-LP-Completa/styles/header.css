@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    background-color: red;
+}
+nav ul{
+    background-color: blueviolet;
+ 
+}
+
+button{
+    background-color:var(--cfPreto);
+}
+.roll-out-left{
+    -webkit-animation:roll-out-left .6s ease-in both;animation:roll-out-left .6s ease-in both
+}
