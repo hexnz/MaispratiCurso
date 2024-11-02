@@ -1,6 +1,7 @@
 
 const inserirNumAleat = document.getElementsByClassName("animationMatrix");
 const cardClick = document.getElementById('cartao');
+const cardClick02 = document.getElementById('cartao02');
 const tagP =document.querySelectorAll('p');
 const tagMain=document.getElementsByTagName('main')[0];
 
@@ -21,6 +22,14 @@ function flip() {
         
     }
 }
+function flip2() {
+    if (cardClick02.style.transform === '' || cardClick02.style.transform === 'rotateY(0deg)') {
+        cardClick02.style.transform = 'rotateY(180deg)';
+    } else {
+        cardClick02.style.transform = 'rotateY(0deg)';
+    }
+}
+
 
 // Converte a coleção em um array
 Array.from(inserirNumAleat).forEach(elemento => {
@@ -32,11 +41,10 @@ Array.from(inserirNumAleat).forEach(elemento => {
 // Adiciona o evento de clique
 cardClick.addEventListener('click', (e) => { 
     flip(); // Chama a função de flip
-
 console.log("Cartão clicado!"); // Debugging
     // Altera a cor dos elementos <p> de verde para azul e vice-versa
     tagP.forEach(p => {
-        if (p.style.color === 'rgb(67, 190, 43)' || p.style.color==='') { // Verde
+        if (p.style.color === 'rgb(67, 190, 43)' || p.style.color==='' || p.style.color=='') { // Verde
             p.style.color = ' rgb(0, 217, 255)'; // Troca para azul
            
         } else {
@@ -44,3 +52,18 @@ console.log("Cartão clicado!"); // Debugging
         }
     });
 });
+cardClick02.addEventListener('click', (e) => { 
+    flip2(); // Chama a função de flip
+
+    
+    tagP.forEach(p => {
+        if (p.style.color === 'rgb(67, 190, 43)' || p.style.color==='' || p.style.color=='yellow') { // Verde
+            p.style.color = 'rgb(217, 190, 823)'; // Troca para azul
+           
+        } else {
+            p.style.color = 'yellow'; // Troca para verde
+        }
+    });
+   
+});
+
