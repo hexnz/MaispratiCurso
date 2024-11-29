@@ -4,7 +4,7 @@ const cardClick = document.getElementById('cartao');
 const cardClick02 = document.getElementById('cartao02');
 const tagP =document.querySelectorAll('p');
 const tagMain=document.getElementsByTagName('main')[0];
-
+const tagAboutMe=document.getElementById("aboutMeLink")
 
 
 function getRandomInt(min, max) {
@@ -15,6 +15,7 @@ function getRandomInt(min, max) {
 
 
 function flip() {
+    console.log("debugggg");
     if (cardClick.style.transform === '' || cardClick.style.transform === 'rotateY(0deg)') {
         cardClick.style.transform = 'rotateY(180deg)';
     } else {
@@ -40,8 +41,7 @@ Array.from(inserirNumAleat).forEach(elemento => {
 
 // Adiciona o evento de clique
 cardClick.addEventListener('click', (e) => { 
-    flip(); // Chama a função de flip
-console.log("Cartão clicado!"); // Debugging
+    flip(); // Chama a função de flip    
     // Altera a cor dos elementos <p> de verde para azul e vice-versa
     tagP.forEach(p => {
         if (p.style.color === 'rgb(67, 190, 43)' || p.style.color==='' || p.style.color=='') { // Verde
@@ -66,4 +66,6 @@ cardClick02.addEventListener('click', (e) => {
     });
    
 });
-
+tagAboutMe.addEventListener("click", (e) => {
+  
+});

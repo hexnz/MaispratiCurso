@@ -129,6 +129,7 @@ main{
     background-color:rgb(32, 38, 41);
     box-shadow: rgb(67, 190, 43) 0rem 0rem 3rem;
     overflow: hidden;
+   
 }
 #apresentationFront img{
     height: 100%;
@@ -138,6 +139,9 @@ main{
 }
 
 #apresentationBack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color:rgb(32, 38, 41);
     color:rgb(67, 190, 43);
     border: 0.2rem  rgb(0, 217, 255) solid;
@@ -145,7 +149,23 @@ main{
     cursor: pointer;
     box-shadow: rgb(0, 217, 255) 0rem 0rem 3rem 0rem;
 }
-
+#hellowCard1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+#hellowCard1 img{
+    width: 1.5rem;
+    
+}
+.card1BackApresentation{
+    width: 80%;
+    padding-top:2rem;
+}
+h1,h3{
+    width: 80%;
+}
 
 section{
     width: 50%;
@@ -176,6 +196,12 @@ section{
     box-shadow: rgb(0, 217, 255) 0rem 0rem 3rem 0rem;
     display: flex;
     flex-direction: column;
+}
+#apresentationBack02 ul{
+    margin-top: 3rem;
+}
+#apresentationBack02 ul li{
+    list-style: circle;
 }
 #contact{
 margin-top:1rem;
