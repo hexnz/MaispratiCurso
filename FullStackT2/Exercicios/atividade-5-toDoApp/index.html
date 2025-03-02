@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Modal Inicio-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalAddList" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="exampleModalLabel">Criar Tarefa</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="mb-3">
+                            <label for="titulo-tarefa" class="col-form-label">Titulo da Tarefa:</label>
+                            <input type="text" class="form-control" id="titulo-tarefa">
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="area-tarefa" class="col-form-label">Área da Tarefa</label>
+                            <select class="form-control" id="area-tarefa">
+                                <option value="1">Saude</option>
+                                <option value="2">Educação</option>
+                                <option value="3">Finanças</option>
+                                <option value="4">Esportes</option>
+                                <option value="5">Viagens</option>
+                                <option value="6">Outros</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="col-form-label ">
+                                <p>Selecione uma Data para a Conlusão da Tarefa</p>
+                            </label>
+                            <input type="date" class="col-form-label form-control" id="data" name="data">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Descreva melhor esta Tarefa:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="createTask()">Criar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal FIM-->
+    <main>
+
+        <section>
+            <h1 class="">To do List</h1>
+
+            <div class="addListbox">
+                <p>Criar Tarefa</p>
+                <button type="button" id=createList class="createListBtn " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@fat">
+                    <img src="imgs/ideia.png" alt="">
+                </button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>teste</th>
+                        <th>teste</th>
+                        <th>teste</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>teste</td>
+                        <td>tes23</td>
+                        <td>outro valor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="thinking-box" class="thinking-box">
+            <img class="thinking" src="imgs/—Pngtree—anxious person thinking confused flat_6728196.png" alt="">
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
