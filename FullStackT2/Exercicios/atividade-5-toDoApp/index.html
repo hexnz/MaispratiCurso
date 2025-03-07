@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!--Modal Inicio-->
+    <!--Modal de Cadastro de Tarefa Inicio-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="ModalAddList" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -50,19 +50,19 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success" onclick="createTask()">Criar</button>
+                    <button type="button" class="btn btn-success" onclick="registerTask()">Criar</button>
                 </div>
             </div>
         </div>
     </div>
-    <!--Modal FIM-->
+    <!--Modal de Cadastro de Tarefa FIM-->
     <main>
 
         <section>
             <h1 class="">To do List</h1>
 
             <div class="addListbox">
-                <p>Criar Tarefa</p>
+                <strong>Criar Tarefa</strong>
                 <button type="button" id=createList class="createListBtn " data-bs-toggle="modal"
                     data-bs-target="#exampleModal" data-bs-whatever="@fat">
                     <img src="imgs/ideia.png" alt="">
@@ -71,16 +71,16 @@
             <table>
                 <thead>
                     <tr>
-                        <th>teste</th>
-                        <th>teste</th>
-                        <th>teste</th>
+                        <th>Titulo</th>
+                        <th>Tipo da Tarefa</th>
+                        <th>Data possível de Conclusão</th>
+                        <th>Descriçao da Tarefa</th>
+                        <th>Opções</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>teste</td>
-                        <td>tes23</td>
-                        <td>outro valor</td>
+                     
                     </tr>
                 </tbody>
             </table>

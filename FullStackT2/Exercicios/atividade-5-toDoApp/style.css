@@ -11,6 +11,7 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-image:url(./imgs/istockphoto-900815020-612x612.jpg)
     
 }
 
@@ -57,6 +58,23 @@ main {
     
     
 }
+.max-descr{
+    width: 10rem;
+    height: 3rem;
+   
+    max-width: 160px;
+    overflow-x:scroll;
+  
+    
+}
+.max-descr::-webkit-scrollbar{
+    width: 1rem;
+    height: 0.3rem;
+    background-color: rgb(255, 255, 255);
+}
+.max-descr::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 247, 205);
+}
 section{
     display: flex;
     position: absolute;
@@ -72,10 +90,40 @@ h1{
     margin-bottom:30px;
 }
 table{
-    background-color: red;
+  border: dashed 0.2rem rgb(0, 0, 0) ;
+  width:50rem;
+  height: 20rem;
+  max-height: 320px;
+  display: block;
+  overflow: auto;
+  border-radius:1rem;
+  
 }
 thead{
-    background-color: blue;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(236,252,252,1) 0%, rgb(0, 140, 255) 63%);
+    
+ 
+  
+}
+thead tr{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    
+}
+thead tr th:nth-child(1){
+    color: rgb(0, 0, 0) !important;
+    
+}
+thead tr th{
+    color: white;
+}
+tbody{
+    width: 100%;
+    display: inline;
 }
 div .createListBtn{
     display: flex;
@@ -111,3 +159,8 @@ div .createListBtn{
     background: rgb(236,252,252);
     background: linear-gradient(90deg, rgba(236,252,252,1) 0%, rgb(0, 140, 255) 63%);
 }
+.btn-primary:hover{
+    background-color:rgba(154, 156, 34, 0.705);
+    transition:600ms;
+}
+    
